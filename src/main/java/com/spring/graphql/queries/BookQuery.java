@@ -1,4 +1,4 @@
-package com.graphql.spring.graphql.queries;
+package com.spring.graphql.queries;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 

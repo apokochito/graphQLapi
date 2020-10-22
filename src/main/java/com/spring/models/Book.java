@@ -1,4 +1,4 @@
-package com.graphql.spring.models;
+package com.spring.models;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;

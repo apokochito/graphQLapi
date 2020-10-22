@@ -1,4 +1,4 @@
-package com.graphql.spring.services;
+package com.spring.services;
 
 public class BookServiceImpl implements BookService {
 }

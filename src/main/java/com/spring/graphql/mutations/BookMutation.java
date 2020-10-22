@@ -1,4 +1,4 @@
-package com.graphql.spring.graphql.mutations;
+package com.spring.graphql.mutations;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 
