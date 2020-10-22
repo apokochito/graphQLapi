@@ -5,6 +5,7 @@ type Book {
 }
 # Query or Mutation objects are root GraphQL objects.
 type Query {
+    book:Book
     books(id: ID):Book
 }
 
