@@ -1,0 +1,17 @@
+type Book {
+    id: String!, # If you want to specify a non-nullable field, you need to use "!".
+    title: String!,
+    author: String!
+}
+# The Root Query for the application
+type Query {
+    getBooks:[Book]! # List of books []
+    getBookById(id: String):Book!
+    hello:String!
+    book(id: String):Book!
+    # Héroe(nombre: String): Heroe
+}
+
+type Mutation {
+    addBook(title:String, author:String):Book!
+}

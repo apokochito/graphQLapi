@@ -2,24 +2,28 @@ package com.spring.graphql.queries;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.spring.models.Book;
-import com.spring.services.BooksService;
+import com.spring.services.BooksServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
 
+@Component
 public class BookQuery implements GraphQLQueryResolver {
 
-    private BooksService booksService;
-
-    public BookQuery(BooksService booksService) {
-        this.booksService = booksService;
-    }
+    @Autowired
+    private BooksServiceImpl booksService;
 
     public List<Book> getBooks() {
         return this.booksService.getBooks();
     }
 
-    public Optional<Book> getBook(String id) {
-        return this.booksService.getBooById(id);
+    public Book getBookById(String id) {
+        return this.booksService.getBookById(id);
+    }
+
+    public String hello() {
+        System.out.println("En el BookQueryyyyyy");
+        return "Hey";
     }
 }

@@ -1,17 +1,17 @@
 package com.spring.graphql.mutations;
 
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
-import com.spring.services.BooksService;
+import com.spring.services.BooksServiceImpl;
+import graphql.kickstart.tools.GraphQLMutationResolver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookMutation implements GraphQLMutationResolver {
 
-    private BooksService booksService;
+    @Autowired
+    private BooksServiceImpl booksService;
 
-    public BookMutation(BooksService booksService) {
-        this.booksService = booksService;
-    }
-
-    public void createBook(String title, String author) {
-        this.booksService.createBook(title, author);
+    public void addBook(String title, String author) {
+        this.booksService.addBook(title, author);
     }
 }
