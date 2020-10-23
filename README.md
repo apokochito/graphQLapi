@@ -17,6 +17,6 @@ GraphQL is a query language. It gives control to the user to query what he needs
 
 - Resolvers (Functions to resolve requests)
 
-### URL to consume API
+### URL to consume API in local
 - http://localhost:3001/graphiql
 - http://localhost:3001/graphql
