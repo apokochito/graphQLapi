@@ -16,3 +16,7 @@ GraphQL is a query language. It gives control to the user to query what he needs
 - Mutations (POST and PUT in REST)
 
 - Resolvers (Functions to resolve requests)
+
+### URL to consume API
+- http://localhost:3001/graphiql
+- http://localhost:3001/graphql
