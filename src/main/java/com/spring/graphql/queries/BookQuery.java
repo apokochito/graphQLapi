@@ -1,8 +1,8 @@
 package com.spring.graphql.queries;
 
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.spring.models.Book;
 import com.spring.services.BooksServiceImpl;
-import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

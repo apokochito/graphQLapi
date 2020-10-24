@@ -1,7 +1,7 @@
 package com.spring.graphql.mutations;
 
+import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.spring.services.BooksServiceImpl;
-import graphql.kickstart.tools.GraphQLMutationResolver;
 import org.springframework.stereotype.Component;
 
 @Component
