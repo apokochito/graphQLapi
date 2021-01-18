@@ -5,13 +5,8 @@ type Book {
 }
 # The Root Query for the application
 type Query {
-    getBooks:[Book]! # List of books []
-    getBookById(id: String):Book!
-    hello:String!
-    book(id: String):Book!
-    # Héroe(nombre: String): Heroe
 }
 
 type Mutation {
-    addBook(title:String, author:String):Book!
+    deleteBook(id: String!): Book!
 }
